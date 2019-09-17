@@ -9,5 +9,6 @@ data class Entry(
     @SerializedName("updated") val updated: Value,
     @SerializedName("title") val title: Title,
     @SerializedName("content") val content: Content,
-    @SerializedName("link") val link: List<Link>
+    @SerializedName("link") val link: List<Link>,
+    @SerializedName("media\$thumbnail") val media: MediaThumbnail
 ) : Serializable

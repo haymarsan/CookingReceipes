@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import com.hms.cookingreceipes.R
 import com.hms.cookingreceipes.data.model.Entry
 import kotlinx.android.synthetic.main.activity_web_page.*
+import kotlinx.android.synthetic.main.list_item_blog.*
 import java.text.SimpleDateFormat
 
 class WebPageActivity : AppCompatActivity() {
@@ -31,7 +33,6 @@ class WebPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_page)
 
-
         val entry = intent.getSerializableExtra("entry") as Entry
 
         val html_text = "<HTML><HEAD>" +
@@ -44,6 +45,7 @@ class WebPageActivity : AppCompatActivity() {
 
         tvTitle.text = entry.title.value
         tvDate.text = SimpleDateFormat("dd MMM, yyyy HH:MM:SS").format(entry.published.value)
+        Glide.with(this).load(entry.media.url).into(ivBlogImage)
 
         MobileAds.initialize(this, resources.getString(R.string.APP_ID))
         mAdView = findViewById(R.id.adView)

@@ -16,7 +16,7 @@
                 android:textStyle="bold"
                 android:textColor="@android:color/primary_text_light"
                 android:textSize="20sp"
-                android:text="ပါ၀င္ပစၥည္းမ်ား"/>
+                android:text="ပါဝင်ပစ္စည်းများ"/>
 
         <TextView
                 android:id="@+id/tvBlogDate"
@@ -31,7 +31,7 @@
                 android:layout_height="70dp"
                 android:padding="5dp"
                 android:layout_below="@id/tvBlogDate"
-                android:src="@drawable/lobster_rolls"/>
+                android:src="@drawable/cooking_chef_1"/>
 
         <TextView
                 android:id="@+id/tvBlogDescription"
@@ -51,6 +51,6 @@
                 android:layout_below="@+id/ivBlogImage"
                 android:textColor="@android:color/holo_blue_dark"
                 android:gravity="end"
-                android:text="ဆက္ဖတ္ရန္"/>
+                android:text="ဆက်ဖတ်ရန်"/>
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

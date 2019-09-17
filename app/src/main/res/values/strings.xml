@@ -10,6 +10,8 @@
     <string name="adUnitID1">ca-app-pub-3940256099942544/6300978111</string>
     <string name="adUnitID2">ca-app-pub-3940256099942544/6300978111</string>
     <string name="adUnitIdIntersitial1">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="welcome">ဟင်းချက်နည်းများ Application မှ \n နွေးထွေးစွာကြိုဆိုပါ၏။
+</string>
 
     //Test ID
     <!--<string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
